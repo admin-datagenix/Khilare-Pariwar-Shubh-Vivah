@@ -18,7 +18,8 @@
 .ganesh-mark{display:block;width:84px;height:84px;margin:0 auto 10px;padding:4px;border-radius:50%;overflow:hidden;border:2px solid #f3c96999;background:radial-gradient(circle at 50% 40%,#fff8ed1a,transparent 70%);box-shadow:0 6px 22px #00000033,0 0 0 6px #f3c96914}
 .ganesh-mark img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
 .eyebrow{color:#f8d98e;letter-spacing:2px;font-weight:600;font-size:14px}.hero h1{font-family:'Tiro Devanagari Marathi',serif;font-size:clamp(30px,5vw,48px);line-height:1.35;margin:12px 0;color:#fff}.hero p{margin:10px auto 0;color:#ffebd0;font-size:17px}.ornament{color:var(--gold);font-size:22px;letter-spacing:8px;margin-top:18px}
-.quick{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:25px}.pill{border:1px solid #f5d58b88;background:#ffffff12;border-radius:999px;padding:8px 16px;color:#fff;font-size:14px}
+.quick{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:25px}.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #f5d58b88;background:#ffffff12;border-radius:999px;padding:8px 16px;color:#fff;font-size:14px}
+.pill-cal{width:18px;height:18px;flex:0 0 18px;display:block}
 nav{position:sticky;top:0;z-index:10;background:#fffdf8f2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:10px 14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:100%}
 nav a{white-space:nowrap;text-decoration:none;color:var(--wine);font-size:14px;font-weight:700;padding:8px 13px;border-radius:12px;border:1px solid transparent;line-height:1.2}nav a:hover,nav a:focus-visible{background:var(--rose);border-color:#ead5e1}
 main{max-width:1000px;margin:34px auto;padding:0 18px 50px}.section-title{text-align:center;margin:0 0 24px;color:var(--wine);font-family:'Tiro Devanagari Marathi',serif;font-size:28px}.section-title span{display:block;font:600 13px 'Hind Vadodara',sans-serif;color:#98734b;letter-spacing:1px;margin-top:3px}
@@ -52,7 +53,7 @@ main{max-width:1000px;margin:34px auto;padding:0 18px 50px}.section-title{text-a
 .dg-logo{height:22px;width:auto;display:block;mix-blend-mode:screen}
 @media(max-width:640px){
 body{padding:0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
-.hero{padding:36px 14px 30px}.hero:before,.hero:after{font-size:56px}.ganesh-mark{width:70px;height:70px;margin-bottom:8px}.hero h1{font-size:clamp(24px,7vw,34px)}.hero p{font-size:14px;max-width:34ch;margin-inline:auto}.quick{gap:8px;margin-top:18px}.pill{font-size:12px;padding:7px 11px}.pill-date .cal-pill{display:inline-block;font-size:17px;line-height:1;margin-right:4px;vertical-align:middle}
+.hero{padding:36px 14px 30px}.hero:before,.hero:after{font-size:56px}.ganesh-mark{width:70px;height:70px;margin-bottom:8px}.hero h1{font-size:clamp(24px,7vw,34px)}.hero p{font-size:14px;max-width:34ch;margin-inline:auto}.quick{gap:8px;margin-top:18px}.pill{font-size:12px;padding:7px 11px;gap:6px}.pill-cal{width:16px;height:16px;flex-basis:16px}
 nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
 nav a{white-space:normal;text-align:center;font-size:11px;font-weight:700;padding:9px 4px;border-radius:10px;background:#fff;border-color:var(--line);box-shadow:0 1px 0 #4a183008}
 main{margin:18px auto;padding:0 10px 32px}.section-title{font-size:21px;margin-bottom:18px}.section-title span{font-size:11px}
@@ -91,7 +92,7 @@ main{margin:18px auto;padding:0 10px 32px}.section-title{font-size:21px;margin-b
   <h1>खिलारे परिवार<br>लग्नसोहळा कार्यक्रमांचे वेळापत्रक २०२६</h1>
   <p>आनंद, मंगलमय क्षण आणि आपुलकीच्या गाठीभेटींचा सोहळा</p>
   <div class="ornament">✧ ❖ ✧</div>
-  <div class="quick"><span class="pill pill-date"><span class="cal-pill" aria-hidden="true">📅</span>२६ नोव्हेंबर – ६ डिसेंबर २०२६</span><span class="pill">💐 सर्व परिवारांचे हार्दिक स्वागत</span></div>
+  <div class="quick"><span class="pill"><svg class="pill-cal" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="1" y="4" width="18" height="15" rx="2" fill="#fff" fill-opacity=".95"/><rect x="1" y="4" width="18" height="5" rx="2" fill="#5ea8f7"/><rect x="5" y="2" width="1.8" height="3.2" rx=".7" fill="#f8d98e"/><rect x="13.2" y="2" width="1.8" height="3.2" rx=".7" fill="#f8d98e"/><circle cx="5.5" cy="11.5" r=".85" fill="#d2dae6"/><circle cx="10" cy="11.5" r=".85" fill="#d2dae6"/><circle cx="14.5" cy="11.5" r=".85" fill="#d2dae6"/><circle cx="5.5" cy="15" r=".85" fill="#d2dae6"/><circle cx="10" cy="15" r=".85" fill="#d2dae6"/><circle cx="14.5" cy="15" r=".85" fill="#d2dae6"/></svg>२६ नोव्हेंबर – ६ डिसेंबर २०२६</span><span class="pill">💐 सर्व परिवारांचे हार्दिक स्वागत</span></div>
  </div>
 </header>
 <nav aria-label="कार्यक्रम निवडा">
