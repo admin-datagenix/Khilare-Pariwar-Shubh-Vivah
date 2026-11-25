@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#3b1024">
-<meta name="description" content="खिलारे परिवार लग्नसोहळा २०२६ – कार्यक्रमाचे वेळापत्रक, वेळा आणि जबाबदाऱ्या.">
+<meta name="description" content="खिलारे परिवार लग्नसोहळा २०२६ – कार्यक्रमांचे वेळापत्रक, वेळा आणि जबाबदाऱ्या.">
 <title>खिलारे परिवार | लग्नसोहळा २०२६</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,14 @@ main{max-width:1000px;margin:34px auto;padding:0 18px 50px}.section-title{text-a
 .day-head{display:flex;align-items:center;gap:14px;padding:17px 22px;background:linear-gradient(90deg,#f8e9ed,#fff8ed);border-bottom:1px solid var(--line)}.day-title{flex:1;min-width:180px}
 .datebox{min-width:62px;height:62px;border-radius:15px;background:var(--wine);color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.15}
 .datebox b{font-size:25px}.datebox small{font-size:11px;color:#f8d98e}.day-head h3{margin:0;color:var(--wine);font-size:20px}.day-head p{margin:2px 0 0;color:var(--muted);font-size:13px}
-.day-body{padding:18px 22px 20px}.event{display:grid;grid-template-columns:112px 1fr;gap:12px;padding:11px 0;border-bottom:1px dashed #eadbd6}.event:last-child{border-bottom:0}.time{font-weight:700;color:var(--wine);font-variant-numeric:tabular-nums}.event-title{font-weight:600;color:#30212b}.note{color:var(--muted);font-size:14px;margin-top:2px}.tag{display:inline-block;background:#f4e8d3;color:#68461c;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:700;margin:4px 4px 0 0}.event-loc{grid-template-columns:112px 1fr auto;align-items:center}
+.day-body{padding:18px 22px 20px}.event{display:grid;grid-template-columns:112px 1fr;gap:12px;padding:11px 0;border-bottom:1px dashed #eadbd6}.event:last-child{border-bottom:0}.time{font-weight:700;color:var(--wine);font-variant-numeric:tabular-nums}.event-title{font-weight:600;color:#30212b}.note{color:var(--muted);font-size:14px;margin-top:2px}.tag{display:inline-block;background:#f4e8d3;color:#68461c;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:700;margin:4px 4px 0 0}
+.note-tags{display:flex;flex-direction:column;gap:6px;width:100%;margin:8px 0 0}
+.note-tags .tag{display:block;width:100%;margin:0;padding:8px 10px;border-radius:10px;text-align:center;line-height:1.45;box-sizing:border-box}
+.event-tags{display:grid;grid-template-columns:112px minmax(0,1fr);gap:6px 12px;align-items:start}
+.event-tags .time{grid-column:1;grid-row:1}
+.event-tags .event-main{grid-column:2;grid-row:1;min-width:0}
+.event-tags .note-tags{grid-column:1/-1;grid-row:2}
+.event-loc{grid-template-columns:112px 1fr auto;align-items:center}
 .callout{margin:14px 0 2px;padding:13px 15px;border-left:4px solid #c58a35;background:#fff7e8;border-radius:8px;color:#543c25;font-size:14px}
 .responsibility{margin-top:13px;padding:14px 16px;border-radius:12px;background:#eef6f1;border:1px solid #d8e9df}.responsibility strong{color:var(--green)}.responsibility ul{margin:6px 0 0;padding-left:21px}
 .meal-note{margin:14px 0 0;background:#f7eef4;border:1px solid #ead5e1;border-radius:12px;padding:14px 16px;color:#4b2439}
@@ -45,7 +52,7 @@ main{max-width:1000px;margin:34px auto;padding:0 18px 50px}.section-title{text-a
 .dg-logo{height:22px;width:auto;display:block;mix-blend-mode:screen}
 @media(max-width:640px){
 body{padding:0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
-.hero{padding:36px 14px 30px}.hero:before,.hero:after{font-size:56px}.ganesh-mark{width:70px;height:70px;margin-bottom:8px}.hero h1{font-size:clamp(24px,7vw,34px)}.hero p{font-size:14px;max-width:34ch;margin-inline:auto}.quick{gap:8px;margin-top:18px}.pill{font-size:12px;padding:7px 11px}
+.hero{padding:36px 14px 30px}.hero:before,.hero:after{font-size:56px}.ganesh-mark{width:70px;height:70px;margin-bottom:8px}.hero h1{font-size:clamp(24px,7vw,34px)}.hero p{font-size:14px;max-width:34ch;margin-inline:auto}.quick{gap:8px;margin-top:18px}.pill{font-size:12px;padding:7px 11px}.pill-date .cal-pill{display:inline-block;font-size:17px;line-height:1;margin-right:4px;vertical-align:middle}
 nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
 nav a{white-space:normal;text-align:center;font-size:11px;font-weight:700;padding:9px 4px;border-radius:10px;background:#fff;border-color:var(--line);box-shadow:0 1px 0 #4a183008}
 main{margin:18px auto;padding:0 10px 32px}.section-title{font-size:21px;margin-bottom:18px}.section-title span{font-size:11px}
@@ -56,12 +63,14 @@ main{margin:18px auto;padding:0 10px 32px}.section-title{font-size:21px;margin-b
 .day-title{min-width:0}.day-head h3{font-size:15px;line-height:1.35}.day-head p{font-size:12px;line-height:1.4}
 .venue{grid-column:1 / -1;justify-self:end;margin:2px 0 0;text-align:right;white-space:normal;max-width:100%}.venue strong{font-size:12px;line-height:1.35}
 .day-body{padding:10px 12px 12px}
-.event,.event-loc{display:flex;flex-wrap:wrap;gap:4px 10px;padding:10px 0;align-items:flex-start}
-.event .time,.event-loc .time{flex:0 0 74px;font-size:12px;line-height:1.4}
-.event>div:not(.time),.event-loc>div:not(.time){flex:1;min-width:0}
+.event:not(.event-tags),.event-loc{display:flex;flex-wrap:wrap;gap:4px 10px;padding:10px 0;align-items:flex-start}
+.event:not(.event-tags) .time,.event-loc .time{flex:0 0 74px;font-size:12px;line-height:1.4}
+.event:not(.event-tags)>div:not(.time),.event-loc>div:not(.time){flex:1;min-width:0}
+.event.event-tags{display:grid;padding:10px 0}
 .event-loc .venue{flex:1 1 100%;justify-self:auto;margin:2px 0 0;text-align:right}
 .time{font-size:13px}.event-title{font-size:14px;line-height:1.45}.note{font-size:12px}
-.tag{font-size:11px;margin:6px 6px 0 0}
+.note-tags .tag{font-size:11px}
+.event-tags{grid-template-columns:74px minmax(0,1fr);gap:4px 10px}
 .meal-note,.responsibility{padding:11px 12px;font-size:13px;line-height:1.55}
 .closing{margin:26px 0 8px;padding:20px 14px;border-radius:16px}.closing h2{font-size:19px;line-height:1.4}.closing p{font-size:14px}
 .actions{margin:16px 0;padding:0 4px}
@@ -79,17 +88,24 @@ main{margin:18px auto;padding:0 10px 32px}.section-title{font-size:21px;margin-b
    <img src="ganesh-icon.jpg" width="84" height="84" alt="श्री गणेश">
   </div>
   <div class="eyebrow">॥ श्री गणेशाय नमः ॥</div>
-  <h1>खिलारे परिवार<br>लग्नसोहळा कार्यक्रमाचे वेळापत्रक २०२६</h1>
+  <h1>खिलारे परिवार<br>लग्नसोहळा कार्यक्रमांचे वेळापत्रक २०२६</h1>
   <p>आनंद, मंगलमय क्षण आणि आपुलकीच्या गाठीभेटींचा सोहळा</p>
   <div class="ornament">✧ ❖ ✧</div>
-  <div class="quick"><span class="pill">📅 २९ नोव्हेंबर – ६ डिसेंबर २०२६</span><span class="pill">💐 सर्व परिवारांचे हार्दिक स्वागत</span></div>
+  <div class="quick"><span class="pill pill-date"><span class="cal-pill" aria-hidden="true">📅</span>२६ नोव्हेंबर – ६ डिसेंबर २०२६</span><span class="pill">💐 सर्व परिवारांचे हार्दिक स्वागत</span></div>
  </div>
 </header>
 <nav aria-label="कार्यक्रम निवडा">
- <a href="#nov29">२९ नोव्हेंबर</a><a href="#nov30">३० नोव्हेंबर</a><a href="#dec1">१ डिसेंबर</a><a href="#dec3">३ डिसेंबर</a><a href="#dec4">४ डिसेंबर</a><a href="#dec5">५ डिसेंबर</a><a href="#dec6">६ डिसेंबर</a>
+ <a href="#nov26">२६ नोव्हेंबर</a><a href="#nov29">२९ नोव्हेंबर</a><a href="#nov30">३० नोव्हेंबर</a><a href="#dec1">१ डिसेंबर</a><a href="#dec3">३ डिसेंबर</a><a href="#dec4">४ डिसेंबर</a><a href="#dec5">५ डिसेंबर</a><a href="#dec6">६ डिसेंबर</a>
 </nav>
 <main>
- <h2 class="section-title">कार्यक्रमाचे वेळापत्रक <span>WEDDING CELEBRATIONS · 2026</span></h2>
+ <h2 class="section-title">कार्यक्रमांचे वेळापत्रक <span>WEDDING CELEBRATIONS · 2026</span></h2>
+
+ <section class="day" id="nov26">
+  <div class="day-head"><div class="datebox"><b>२६</b><small>नोव्हेंबर</small></div><div class="day-title"><h3>गुरुवार, २६ नोव्हेंबर २०२६</h3><p>गारवा जेवण</p></div><span class="venue"><strong>📍 योगेश्वर बंगला</strong></span></div>
+  <div class="day-body">
+   <div class="event"><div class="time">दुपारी १:००</div><div><div class="event-title">गारवा जेवण</div><div class="note">सर्व खिलारे परिवारासाठी</div></div></div>
+  </div>
+ </section>
 
  <section class="day" id="nov29">
   <div class="day-head"><div class="datebox"><b>२९</b><small>नोव्हेंबर</small></div><div class="day-title"><h3>रविवार, २९ नोव्हेंबर २०२६</h3><p>गारवा जेवण</p></div><span class="venue"><strong>📍 योगेश्वर बंगला</strong></span></div>
@@ -118,10 +134,10 @@ main{margin:18px auto;padding:0 10px 32px}.section-title{font-size:21px;margin-b
  <section class="day" id="dec3">
   <div class="day-head"><div class="datebox"><b>०३</b><small>डिसेंबर</small></div><div class="day-title"><h3>गुरुवार, ३ डिसेंबर २०२६</h3><p>गाठीभेटी, याद्या कार्यक्रम, साखरपुडा, संगीत व हळदी समारंभ</p></div><span class="venue venue-club"><strong>📍 खरे क्लब हाऊस</strong></span></div>
   <div class="day-body">
-   <div class="event"><div class="time">संध्या. ६:००</div><div><div class="event-title">सर्वांनी कार्यालयात उपस्थित राहावे</div></div></div>
-   <div class="event"><div class="time">संध्या. ६:१५</div><div><div class="event-title">गाठीभेटी कार्यक्रम</div></div></div>
-   <div class="event"><div class="time">संध्या. ६:३०</div><div><div class="event-title">याद्या कार्यक्रम</div></div></div>
-   <div class="event"><div class="time">संध्या. ७:००</div><div><div class="event-title">साखरपुडा समारंभ</div></div></div>
+   <div class="event"><div class="time">संध्याकाळी ६:००</div><div><div class="event-title">सर्वांनी कार्यालयात उपस्थित राहावे</div></div></div>
+   <div class="event"><div class="time">संध्याकाळी ६:१५</div><div><div class="event-title">गाठीभेटी कार्यक्रम</div></div></div>
+   <div class="event"><div class="time">संध्याकाळी ६:३०</div><div><div class="event-title">याद्या कार्यक्रम</div></div></div>
+   <div class="event"><div class="time">संध्याकाळी ७:००</div><div><div class="event-title">साखरपुडा समारंभ</div></div></div>
    <div class="event"><div class="time">रात्री ८:००</div><div><div class="event-title">संगीत कार्यक्रम</div></div></div>
    <div class="event"><div class="time">रात्री ९:००</div><div><div class="event-title">रात्रीचे भोजन</div></div></div>
    <div class="event"><div class="time">रात्री १०:०० नंतर</div><div><div class="event-title">हळदी समारंभ</div></div></div>
@@ -156,8 +172,8 @@ main{margin:18px auto;padding:0 10px 32px}.section-title{font-size:21px;margin-b
   <div class="day-body">
    <div class="event"><div class="time">सकाळी ७:००</div><div><div class="event-title">मंगसुळी देवदेव कार्यक्रम</div></div></div>
    <div class="event"><div class="time">सकाळी ११:३०</div><div><div class="event-title">जोतिबा देवदेव कार्यक्रम</div></div></div>
-   <div class="responsibility"><strong>कार्यक्रमांच्या जबाबदाऱ्या</strong><ul><li><b>मंगसुळी देवदेव:</b> रविंद्र खिलारे व राजश्री खिलारे</li><li><b>जोतिबा देवदेव:</b> विनय खिलारे, पायल व निखिल जाधव</li></ul></div>
-   <div class="event"><div class="time">रात्री ८:००</div><div><div class="event-title">रात्रीचे स्नेहभोजन</div><div class="note"><span class="tag">मांसाहारी भोजन – सर्व खिलारे परिवारासाठी</span><span class="tag">शाकाहारी भोजन – शाकाहारी सदस्यांसाठी स्वतंत्र व्यवस्था</span></div></div></div>
+   <div class="responsibility"><strong>कार्यक्रमांच्या जबाबदाऱ्या</strong><ul><li><b>मंगसुळी देवदेव:</b> रविंद्र खिलारे व राजश्री खिलारे</li><li><b>जोतिबा देवदेव:</b> विनय खिलारे, पायल खिलारे व निखिल जाधव</li></ul></div>
+   <div class="event event-tags"><div class="time">रात्री ८:००</div><div class="event-main"><div class="event-title">रात्रीचे स्नेहभोजन</div></div><div class="note note-tags"><span class="tag">मांसाहारी भोजन – सर्व खिलारे परिवारासाठी</span><span class="tag">शाकाहारी भोजन – शाकाहारी सदस्यांसाठी स्वतंत्र व्यवस्था</span></div></div>
   </div>
  </section>
 
@@ -179,7 +195,7 @@ main{margin:18px auto;padding:0 10px 32px}.section-title{font-size:21px;margin-b
 </footer>
 <script>
 function sharePage(){
- const data={title:document.title,text:"खिलारे परिवार – लग्नसोहळा कार्यक्रमाचे वेळापत्रक २०२६",url:location.href};
+ const data={title:document.title,text:"खिलारे परिवार – लग्नसोहळा कार्यक्रमांचे वेळापत्रक २०२६",url:location.href};
  if(navigator.share){navigator.share(data).catch(()=>{});}
  else if(navigator.clipboard){navigator.clipboard.writeText(location.href).then(()=>alert("वेबसाइटची लिंक कॉपी झाली आहे. आता WhatsApp वर शेअर करा."));}
  else{alert("या पेजची लिंक ब्राउझरमधून कॉपी करून शेअर करा.");}
