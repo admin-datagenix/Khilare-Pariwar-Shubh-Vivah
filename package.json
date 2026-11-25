@@ -1,0 +1,13 @@
+{
+  "name": "khilare-pariwar-shubh-vivah",
+  "private": true,
+  "scripts": {
+    "build:analytics": "esbuild analytics-src.js --bundle --minify --format=esm --outfile=analytics.js"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
